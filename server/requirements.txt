@@ -1,0 +1,5 @@
+Flask
+Flask-SocketIO
+roboflow
+opencv-python-headless
+numpy

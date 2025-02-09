@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blackjack Capture</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h1 { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>Blackjack Capture</h1>
+    <button id="start">Start Capture</button>
+    <button id="stop">Stop Capture</button>
+    <script>
+        document.getElementById('start').addEventListener('click', () => {
+            chrome.runtime.sendMessage({ action: "start" });
+        });
+
+        document.getElementById('stop').addEventListener('click', () => {
+            chrome.runtime.sendMessage({ action: "stop" });
+        });
+    </script>
+</body>
+</html>
